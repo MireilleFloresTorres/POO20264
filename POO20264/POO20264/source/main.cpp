@@ -1,48 +1,65 @@
 #include "Prerequisites.h"
 //Crear clase character
+/** 
+*class item
+*Representamos un objeto de nuestro inventario
+*/
 class
     item {
 public:
-        item (int healt) : m_health(healt) {}
+    /**
+     * nombre Nombre del item
+     * id Identificador 
+     * peso Peso del item
+     * nivel Nivel del item
+     */
+    item(std::string nombre, int id, float peso, int nivel)
+        : m_nombre(nombre), m_id(id), m_peso(peso), m_nivel(nivel) {
+    }
+    void mostrarItem() const; 
 
-    void
-        rebirth() {
-        if (!isCharacterAlive && m_health <= 0) {
-        std:: cout << "El character a arevivido en el spawn point" << std :: endl;
-		isCharacterAlive = true;
+    void getInformation() {
+        std::cout << "Ingresa nombre de tu item: ";
+        std::cin >> m_nombre;
+
+        std::cout << "Ingresa el id del item (no puntos): ";
+        std::cin >> m_id;
+
+        std::cout << "Ingresa el eso del item: ";
+        std::cin >> m_peso;
+
+        std::cout << "Ingresa el nivel del item (1,2,3...): ";
+        std::cin >> m_nivel;
+        if (m_nivel > 3) {
+            std::cout << "Tu itm es muy poderoso..."<<std::endl;
         }
+    }
+private://declaramos las varibles dentro de la clase no solo en el constructor
+    std::string m_nombre;
+    int m_id;
+    float m_peso;
+    int m_nivel;
+};
+
+/**
+*Se muestra el item agregado
+*/
+void item:: mostrarItem () const{
+    std::cout << "Nombre: " << m_nombre << std::endl;
+    std::cout << "Id: " << m_id << std::endl;
+    std::cout << "Peso: " << m_peso << std::endl;
+    std::cout << "Nivel: " << m_nivel << std::endl;
+
 }
-
-int
-getHealth() const {
-    return m_health;
-}
-
-void
-setHealt(int health) {
-    m_health = health;
-}
-
- private:
-     bool isCharacterAlive = false;
-
-  protected:
-      int m_health;
-  };
-
-  //this funtion is in charge of being the entry point of the app.
+/**
+*Se muestra en consola
+*/
   int
       main() {
-      character pepe(150);
-      pepe.getHealth();
-  std:: cout << pepe.getHealth() << std:: endl;
-      pepe.setHealt(-50);
-  std:: cout << pepe.getHealth() << std:: endl;
+      //traeigp los void
+      item objeto("", 0, 0.0f, 0);
 
-      if (pepe.getHealth() <= 0) {
-      std:: cout << "El pepe, murio" << std:: endl;
-          pepe.rebirth();
-      }
-  std:: cout << "Hello world" << std:: endl;
+      objeto.getInformation();
+      objeto.mostrarItem();
       return 0;
   }
