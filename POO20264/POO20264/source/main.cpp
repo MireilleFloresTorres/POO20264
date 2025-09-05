@@ -1,5 +1,6 @@
 #include "Prerequisites.h"
 //Crear clase character
+//No entendí bien como utilizamos los comentarios Doxygen
 /** 
 *class item
 *Representamos un objeto de nuestro inventario
