@@ -1,5 +1,7 @@
 #include "Prerequisites.h"
 #include "Inventory.h"
+#include "Rectangulo.h"
+
 class
     item{ };
 
@@ -14,7 +16,22 @@ class
       inventory.useItem("Pocion de vida", 2);
       inventory.showInventory();
 
-      std::cout << "Hello World!" << std::endl;
+      float ancho, altura;
+
+      std::cout << "Ingrese el ancho: " << std::endl;
+      std::cin >> ancho;
+
+      std::cout << "Ingrese el alto: " << std::endl;
+      std::cin >> altura;
+
+      Rectangulo rec(ancho, altura);
+
+      std::cout << "Area: " << rec.areaRectangulo() << std::endl;
+      std::cout << "Perímetro: " << rec.perimetroRectangulo() << std::endl;
+
+      Fecha fecha;
+      fecha.getFecha();
       std::cin.get();
+ 
       return 0;
   }

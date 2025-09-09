@@ -167,6 +167,7 @@
     <ClInclude Include="include\Inventory.h" />
     <ClInclude Include="include\item.h" />
     <ClInclude Include="include\Prerequisites.h" />
+    <ClInclude Include="include\Rectangulo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
