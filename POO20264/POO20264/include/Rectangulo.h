@@ -19,22 +19,3 @@ private:
     float m_ancho;
     float m_altura;
 };
-
-int
-main() {
-
-    float ancho, altura;
-
-    std::cout << "Ingrese el ancho: " << std::endl;
-    std::cin >> ancho;
-
-    std::cout << "Ingrese el alto: " << std::endl;
-    std::cin >> altura;
-
-    Rectangulo rec(ancho, altura);
-
-    std::cout << "Area: " << rec.areaRectangulo() << std::endl;
-    std::cout << "Perímetro: " << rec.perimetroRectangulo() << std::endl;
-
-    return 0;
-}

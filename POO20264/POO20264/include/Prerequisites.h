@@ -11,7 +11,7 @@ struct Fecha {
 
 	void
 		getFecha() {
-		time_t t = time(0);
+		time_t t = time(0); // get time now
 		tm* now = localtime(&t);
 
 		dia = now->tm_mday;

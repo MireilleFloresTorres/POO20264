@@ -1,6 +1,7 @@
 #include "Prerequisites.h"
 #include "Inventory.h"
-#include "Rectangulo.h"
+#include "Circulo.h"
+
 
 class
     item{ };
@@ -24,14 +25,15 @@ class
       std::cout << "Ingrese el alto: " << std::endl;
       std::cin >> altura;
 
-      Rectangulo rec(ancho, altura);
 
-      std::cout << "Area: " << rec.areaRectangulo() << std::endl;
-      std::cout << "Perímetro: " << rec.perimetroRectangulo() << std::endl;
+	  Circulo micirculo(5);
+      std::cout << "El area del circulo es: " << micirculo.area() << std::endl;
+      std::cout << "El perimetro del circulo es: " << micirculo.perimetro() << std::endl;
 
       Fecha fecha;
       fecha.getFecha();
-      std::cin.get();
+	  fecha.toString();
+	  std::cout << fecha.toString() << std::endl;
  
       return 0;
   }
