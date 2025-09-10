@@ -4,18 +4,21 @@
 
 class
     Rectangulo {
-public:
-    Rectangulo(float ancho, float altura) : m_ancho(ancho), m_altura(altura) {}
-
-    float perimetroRectangulo() const {
-        return 2 * (m_ancho + m_altura);
-    }
-
-    float areaRectangulo() const {
-        return m_ancho * m_altura;
-    }
-
-private:
-    float m_ancho;
-    float m_altura;
+private:     float base;
+			 float altura;
+public:      Rectangulo() = default;
+			 ~Rectangulo() = default;
+	
+			 void setBase(float b){
+				 base = b;
+			 }
+			 void setAltura(float a){
+				 altura = a;
+			 }
+			 float area() const{
+				 return base * altura;
+			 }
+			 float perimetro() const{
+				 return 2 * (base + altura);
+			 }
 };

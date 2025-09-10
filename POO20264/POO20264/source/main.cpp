@@ -1,6 +1,8 @@
 #include "Prerequisites.h"
 #include "Inventory.h"
+#include"Rectangulo.h"
 #include "Circulo.h"
+#include "Estudiante.h"
 
 
 class
@@ -17,23 +19,30 @@ class
       inventory.useItem("Pocion de vida", 2);
       inventory.showInventory();
 
-      float ancho, altura;
+	  Rectangulo rect;
+	  rect.setAltura(5);
+	  rect.setBase(3);
+	  std::cout << "El area del rectangulo es: " << rect.area() << std::endl;
+	  std::cout << "El perimetro del rectangulo es: " << rect.perimetro() << std::endl;
 
-      std::cout << "Ingrese el ancho: " << std::endl;
-      std::cin >> ancho;
-
-      std::cout << "Ingrese el alto: " << std::endl;
-      std::cin >> altura;
-
+      Fecha fecha; // Asegúrate de que los miembros de Fecha se inicialicen correctamente
+      fecha.getFecha();
+      std::cout << fecha.toString() << std::endl;
 
 	  Circulo micirculo(5);
       std::cout << "El area del circulo es: " << micirculo.area() << std::endl;
       std::cout << "El perimetro del circulo es: " << micirculo.perimetro() << std::endl;
 
-      Fecha fecha;
-      fecha.getFecha();
-	  fecha.toString();
-	  std::cout << fecha.toString() << std::endl;
- 
+	  Estudiante estudiantes[5];
+
+      estudiantes[0].setEstudiante("Eduardo", 23);
+      estudiantes[1].setEstudiante("Kevin", 20);
+      estudiantes[2].setEstudiante("Jose", 21);
+      estudiantes[3].setEstudiante("Misael", 22);
+      estudiantes[4].setEstudiante("Miguel", 19);
+
+      for (int i = 0; i < 5; i++) {
+          estudiantes[i].Informacion();
+      }
       return 0;
   }

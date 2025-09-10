@@ -6,11 +6,12 @@ class Circulo {
 		Circulo(float radio) : m_radio(radio) {}
 		~Circulo() = default;
 
-		float area() {
+		float area() const {
 			return m_PI * pow(m_radio, 2);
 		}
-		float perimetro() { 
-			return 2 * m_PI * m_radio; }
+		float perimetro() const {
+			return 2 * m_PI * m_radio;
+		}
 
 private:
 	float m_radio;
