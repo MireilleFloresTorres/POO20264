@@ -3,11 +3,10 @@
 #include"Rectangulo.h"
 #include "Circulo.h"
 #include "Estudiante.h"
-
-
+#include "CuentaBancaria.h"
+#include "CuentaEspecial.h"
 class
     item{ };
-
 
   int
       main() {
@@ -44,5 +43,29 @@ class
       for (int i = 0; i < 5; i++) {
           estudiantes[i].Informacion();
       }
-      return 0;
+
+
+      CuentaBancaria cuenta("Juan Perez");
+      std::cout << cuenta.titular << std::endl;
+
+      cuenta.titular = "Otro Nombre";
+      std::cout << cuenta.titular << std::endl;
+
+      cuenta.ConsultarSaldo();           // Muestra saldo inicial
+      cuenta.aplicarInteres(0.05);       // Aplica 5% de interés
+      cuenta.ConsultarSaldo();
+     
+      CuentaEspecial cuenta1("Juan Perez");
+      CuentaEspecial cuenta2("Ana Lopez");
+
+      // Supón que quieres transferir 100 de cuenta1 a cuenta2
+      cuenta1.transferirDinero(100, cuenta2);
+
+      // Puedes mostrar los titulares para verificar
+      std::cout << cuenta1.titular << std::endl;
+      std::cout << cuenta2.titular << std::endl;
+
+
+
+          return 0;
   }
