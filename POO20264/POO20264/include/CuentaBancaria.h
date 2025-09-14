@@ -9,8 +9,9 @@ private:
 public:
 	std::string titular;
 
-	CuentaBancaria(std::string nombreTitular);
-	CuentaBancaria() : saldo(0.0) {} // Constructor privado para evitar instanciación sin datos
+	// Constructor público
+	CuentaBancaria(std::string nombreTitular) : titular(nombreTitular), saldo(0.0) {}
+	CuentaBancaria() : saldo(0.0) {} // Constructor por defecto para evitar instanciación sin datos
 	void ConsultarSaldo() const { std::cout << "Saldo actual: " << saldo << std::endl; }
 
 	void aplicarInteres(double tasa) {
@@ -19,9 +20,9 @@ public:
 
 protected:
 	int numeroCuenta;
-	CuentaBancaria(int numeroCuenta) : numeroCuenta(numeroCuenta) {}
-	// Constructor
-	CuentaBancaria(std::string nombreTitular) : titular(nombreTitular) {}
+
+	// Constructor protegido
+	CuentaBancaria(int numeroCuenta) : numeroCuenta(numeroCuenta), saldo(0.0) {}
 
 	void transferir(double monto, CuentaBancaria& cuentaDestino) {
 		if (monto > 0 && monto <= saldo) {
