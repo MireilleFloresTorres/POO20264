@@ -24,7 +24,7 @@ class
 	  std::cout << "El area del rectangulo es: " << rect.area() << std::endl;
 	  std::cout << "El perimetro del rectangulo es: " << rect.perimetro() << std::endl;
 
-      Fecha fecha; // Asegúrate de que los miembros de Fecha se inicialicen correctamente
+      Fecha fecha;
       fecha.getFecha();
       std::cout << fecha.toString() << std::endl;
 
@@ -58,7 +58,7 @@ class
       CuentaEspecial cuenta1("Juan Perez");
       CuentaEspecial cuenta2("Ana Lopez");
 
-      // Supón que quieres transferir 100 de cuenta1 a cuenta2
+      // transferir 100 de cuenta1 a cuenta2
       cuenta1.transferirDinero(100, cuenta2);
 
       // Puedes mostrar los titulares para verificar

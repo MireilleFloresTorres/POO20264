@@ -41,7 +41,10 @@
     <ClInclude Include="include\CuentaBancaria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\CuentaEspecial.h">
+    <ClInclude Include="include\usuarioBancario.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Banco.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
