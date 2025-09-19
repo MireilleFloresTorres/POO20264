@@ -5,6 +5,7 @@
 #include "Estudiante.h"
 #include "CuentaBancaria.h"
 #include"usuarioBancario.h"
+#include "Banco.h"
 
 
 class
@@ -46,17 +47,19 @@ class
           estudiantes[i].Informacion();
       }
 
+      Banco banco;
+      UsuarioBancario Santander("Juan", "Pérez", 1000.0, 50.0, 100);
+      UsuarioBancario Banorte("María", "García", 1500.0, 75.0, 150);
 
-      CuentaBancaria cuenta("Juan Perez");
-      std::cout << cuenta.titular << std::endl;
+      banco.compra(Banorte, 200.0, "Supermercado");
+      banco.transferencia(Santander, Banorte, 300.0);
 
-      std::cout << cuenta.titular << std::endl;
+      Santander.depositar(500.0);
+      Santander.retirar(100.0);
+      Santander.aplicarInteres(0.05);
 
-         // Muestra saldo inicial
-      cuenta.aplicarInteres(0.05);       // Aplica 5% de interés
-
-      UsuarioBancario usuario_1(CuentaBancaria("Juan Perez"), "Juan Perez");
-      usuario_1.consultarSaldo();
-
+      Santander.consultarSaldo();
+      std::cout << "Santander cashback: $" << Santander.getCashback() << std::endl;
+      std::cout << "Banorte cashback: $" << Banorte.getCashback() << std::endl;
           return 0;
   }
