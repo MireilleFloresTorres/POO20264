@@ -7,7 +7,6 @@ public:
 	Banco() = default;
 	~Banco() = default;
 
-	void compra( UsuarioBancario& usuario, double monto) {
-		
-	}
+	void compra(double monto, UsuarioBancario& cuenta);
+   
 };
