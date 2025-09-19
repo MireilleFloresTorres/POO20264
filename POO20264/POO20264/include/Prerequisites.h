@@ -27,3 +27,11 @@ struct Fecha {
 		return std::to_string(dia) + "/" + std::to_string(mes) + "/" + std::to_string(anio);
 	}
 };
+
+
+enum TRADE {
+    TELECOMUNICACIONES = 0,
+    RESTAURANTES = 1,
+    FARMACIA = 2,
+    SUPERMERCADO = 3
+};

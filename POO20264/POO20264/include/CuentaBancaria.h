@@ -1,10 +1,18 @@
 #pragma once
 #include "Prerequisites.h"
 
+/**
+* Clase cuentabancaria que ima una cuenta bancaria basica
+*/
 class CuentaBancaria {
 private:
-	double saldo;
+	double saldo;//mantenemos el saldo oculto y solo los metodos de la clase pueden acceder a el
 
+	/**
+	* Calcula el interes y lo suuma al saldo de la cuenta
+	* utilizamos tasa Interes como parametro para calcular el interes
+	* 
+	*/
 	void CalcularInteres(double tasaInteres) { saldo += saldo * tasaInteres; }//calcula y suma el interes al saldo
 
 public:
