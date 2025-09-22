@@ -5,6 +5,7 @@
 #include "Estudiante.h"
 #include "UsuarioBancario.h"
 #include "Banco.h"
+#include "Productos.h"
 
 
 class
@@ -59,6 +60,20 @@ class
 
       std::cout << "Despues de la transferencia:" << std::endl;
 
+	  Productos galletas("Galletas de Chocolate", "Galletas rellenas de crema de vainilla",// creamos un objeto de la clase Productos
+		  Categoria::Alimentos, TipoProducto::CONSUMIBLE, Marca::Nestle,// le dmaos argumentos al constructor para inicializar sus atributos
+          105, 0.4, 70.50);
+
+	  std::cout << "Nombre: " << galletas.getNombre() << std::endl;// accedemos a los atributos mediante los metodos get
+	  std::cout << "Marca: " << MarcaToString(galletas.getMarca()) << std::endl;// usamos las funciones globales para convertir los enum a string
+      std::cout << "Costo: " << galletas.getCosto() << std::endl;
+      std::cout << "Categoria: " << CategoriaToString(galletas.getCategoria()) << std::endl;
+      std::cout << "Tipo DE PRODUCTO: " << TipoProductoToString(galletas.getConsumible()) << std::endl;
+
+	  galletas.setCosto(50.00);// modificamos el costo mediante el metodo set
+	  std::cout << "Nombre: " << galletas.getNombre() << std::endl;// accedemos a los atributos mediante los metodos get y moitramos el costo modificado
+      std::cout << "Marca: " << MarcaToString(galletas.getMarca()) << std::endl;
+      std::cout << "Nuevo Costo: $" << galletas.getCosto() << std::endl;
 
       std::cin.get();
       return 0;

@@ -28,18 +28,26 @@ struct Fecha {
 	}
 };
 
+/**
+* definiciones crean tipos de datos personalizados con un conjunto predefinido de valores
+*/
 enum TipoProducto {
     CONSUMIBLE,
     NO_CONSUMIBLE
 };
 
 enum Marca {
-    MARCA_A,
-    MARCA_B,
-    MARCA_C,
-    MARCA_D
+    Samsung,
+    Nike,
+    Adidas,
+    Nestle,
 };
-
+enum Categoria {
+    Electronicos,
+    Alimentos,
+    Ropa,
+    Hogar,
+};
 enum
 COMPRAS{
 TELECOMUNICACIONES = 1,
