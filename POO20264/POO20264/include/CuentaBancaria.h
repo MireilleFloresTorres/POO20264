@@ -1,62 +1,63 @@
+
 #pragma once
 #include "Prerequisites.h"
 
-/**
-* Clase cuentabancaria que ima una cuenta bancaria basica
-*/
-class CuentaBancaria {
-private:
-	double saldo;//mantenemos el saldo oculto y solo los metodos de la clase pueden acceder a el
-
-	/**
-	* Calcula el interes y lo suuma al saldo de la cuenta
-	* utilizamos tasa Interes como parametro para calcular el interes
-	* 
-	*/
-	void CalcularInteres(double tasaInteres) { saldo += saldo * tasaInteres; }//calcula y suma el interes al saldo
-
+class
+	CuentaBancaria {
 public:
-	std::string titular;
-
-	CuentaBancaria(std::string nombreTitular, double saldoInicial)
-		: titular(nombreTitular), saldo(saldoInicial) {
+	CuentaBancaria() = default;
+	CuentaBancaria(std::string propietario, int numCuenta, double saldoInicial) :
+		m_propietario(propietario), m_numeroCuenta(numCuenta), m_saldo(saldoInicial) {
 	}
-
-	CuentaBancaria(std::string nombreTitular) : titular(nombreTitular), saldo(0.0) {}
-	CuentaBancaria() : titular("Juanita"), saldo(300.00) {}
 	~CuentaBancaria() = default;
 
-	void ConsultarSaldo() const { //para mostrar el saldo
-		std::cout << "Titular: " << titular << std::endl;
-		std::cout << "Saldo actual: " << saldo << std::endl; 
+	double&
+		consultarSaldo() {
+		std::cout << "Saldo actual de " << m_propietario
+			<< " (Cuenta " << m_numeroCuenta << "): " << m_saldo << std::endl;
+		return m_saldo;
 	}
 
-	void aplicarInteres(double tasa) {
-		CalcularInteres(tasa); // Llama al metodo privado
+	void
+		mostrarInteresCalculado() {
+		double tasaInteres = 5.0; // Tasa de interes del 5%
+		double interes = calcularInteres(tasaInteres);
+		std::cout << "Interes calculado al " << tasaInteres << "% sobre el saldo de "
+			<< m_saldo << " es: " << interes << std::endl;
 	}
 
-	void depositar(double cantidad) {
-		if (cantidad > 0) {//validamos orimeramente que la cantidad sea mayor a 0
-			saldo += cantidad;// si es así seposita el dinero
-			std::cout << "Depósito realizado: " << cantidad << std::endl;
-		}
-		else {
-			std::cout << "Cantidad inválida para depósito." << std::endl;
-		}//si no es mayor a 0 no se deposita y se muestra esste menajse
-	}
-
-	bool retirar(double cantidad) {
-		if (cantidad > 0 && cantidad <= saldo) {
-			saldo -= cantidad;//vemos si la cantidad a retirar es mayor a 0 y menor o igual al saldo
-			std::cout << "Retiro realizado: " << cantidad << std::endl;
-			return true;// si es así se retira el dinero y se retorna true
-		}
-		else {
-			std::cout << "Fondos insuficientes o cantidad inválida." << std::endl;
-			return false;//si no se cumple la condicion no se retira el dinero y se retorna false
-		}
+	int
+		getNumeroCuenta() const {
+		return m_numeroCuenta;
 	}
 
 protected:
-	int numeroCuenta;//matenemos el numero de cuenta oculto y solo las clases derivadas pueden acceder a el
+	// Transferir dinero a otra cuenta
+	void
+		transferir(CuentaBancaria& cuentaOrigen, CuentaBancaria& cuentaDestino, double monto, int noRef) {
+		if (monto > 0 && monto <= cuentaOrigen.m_saldo) {
+			cuentaOrigen.m_saldo -= monto;
+			cuentaDestino.m_saldo += monto;
+			std::cout << "Transferencia de " << monto << " de la cuenta "
+				<< cuentaOrigen.m_numeroCuenta << " a la cuenta " << cuentaDestino.m_numeroCuenta
+				<< " realizada con exito." << " Numero de Referencia: " << noRef << std::endl;
+		}
+		else {
+			std::cout << "Error en la transferencia: monto invalido o saldo insuficiente." << std::endl;
+		}
+	}
+
+private:
+	double
+		calcularInteres(double tasaInteres) {
+		return m_saldo * tasaInteres / 100.0;
+	}
+
+public:
+	std::string m_propietario;
+protected:
+	int m_numeroCuenta;
+private:
+	double m_saldo;
+
 };

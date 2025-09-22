@@ -41,10 +41,10 @@
     <ClInclude Include="include\CuentaBancaria.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\usuarioBancario.h">
+    <ClInclude Include="include\Banco.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\Banco.h">
+    <ClInclude Include="include\UsuarioBancario.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

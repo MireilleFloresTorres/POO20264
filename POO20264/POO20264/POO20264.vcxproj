@@ -167,12 +167,12 @@
     <ClInclude Include="include\Banco.h" />
     <ClInclude Include="include\Circulo.h" />
     <ClInclude Include="include\CuentaBancaria.h" />
-    <ClInclude Include="include\usuarioBancario.h" />
     <ClInclude Include="include\Estudiante.h" />
     <ClInclude Include="include\Inventory.h" />
     <ClInclude Include="include\item.h" />
     <ClInclude Include="include\Prerequisites.h" />
     <ClInclude Include="include\Rectangulo.h" />
+    <ClInclude Include="include\UsuarioBancario.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

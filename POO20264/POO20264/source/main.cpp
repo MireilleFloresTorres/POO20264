@@ -3,8 +3,7 @@
 #include"Rectangulo.h"
 #include "Circulo.h"
 #include "Estudiante.h"
-#include "CuentaBancaria.h"
-#include"usuarioBancario.h"
+#include "UsuarioBancario.h"
 #include "Banco.h"
 
 
@@ -21,21 +20,20 @@ class
       inventory.useItem("Pocion de vida", 2);
       inventory.showInventory();
 
-	  Rectangulo rect;
-	  rect.setAltura(5);
-	  rect.setBase(3);
-	  std::cout << "El area del rectangulo es: " << rect.area() << std::endl;
-	  std::cout << "El perimetro del rectangulo es: " << rect.perimetro() << std::endl;
+      Rectangulo rect;
+      rect.setAltura(5);
+      rect.setBase(3);
+      std::cout << "El area del rectangulo es: " << rect.area() << std::endl;
+      std::cout << "El perimetro del rectangulo es: " << rect.perimetro() << std::endl;
 
       Fecha fecha;
       fecha.getFecha();
-      std::cout << fecha.toString() << std::endl;
 
-	  Circulo micirculo(5);
+      Circulo micirculo(5);
       std::cout << "El area del circulo es: " << micirculo.area() << std::endl;
       std::cout << "El perimetro del circulo es: " << micirculo.perimetro() << std::endl;
 
-	  Estudiante estudiantes[5];
+      Estudiante estudiantes[5];
 
       estudiantes[0].setEstudiante("Eduardo", 23);
       estudiantes[1].setEstudiante("Kevin", 20);
@@ -47,19 +45,22 @@ class
           estudiantes[i].Informacion();
       }
 
-      Banco banco;
-      UsuarioBancario Santander("Juan", "Pérez", 1000.0, 50.0, 100);
-      UsuarioBancario Banorte("María", "García", 1500.0, 75.0, 150);
+      Banco Santander;
+      UsuarioBancario Ariana = Santander.nuevoUsuario(CuentaBancaria("Ariana", 0001, 5000.0));
+      UsuarioBancario Ana = Santander.nuevoUsuario(CuentaBancaria("Ana", 0002, 3000.0));
 
-      banco.compra(Banorte, 200.0, "Supermercado");
-      banco.transferencia(Santander, Banorte, 300.0);
 
-      Santander.depositar(500.0);
-      Santander.retirar(100.0);
-      Santander.aplicarInteres(0.05);
+      std::cout << "Antes de la transferencia:" << std::endl;
 
-      Santander.consultarSaldo();
-      std::cout << "Santander cashback: $" << Santander.getCashback() << std::endl;
-      std::cout << "Banorte cashback: $" << Banorte.getCashback() << std::endl;
-          return 0;
+
+      std::cout << "Realizando la transferencia:" << std::endl;
+      Santander.realizarTransferencia(Ana, Ariana, 1500.0, 1709);
+      Santander.realizarCompra(Ariana, "Shampoo", 245.0, 1809); // Esto debe de dar cashBack (Compras en comercios = 1%)
+
+      std::cout << "Despues de la transferencia:" << std::endl;
+
+
+      std::cin.get();
+      return 0;
   }
+
