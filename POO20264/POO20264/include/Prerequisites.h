@@ -28,6 +28,17 @@ struct Fecha {
 	}
 };
 
+enum TipoProducto {
+    CONSUMIBLE,
+    NO_CONSUMIBLE
+};
+
+enum Marca {
+    MARCA_A,
+    MARCA_B,
+    MARCA_C,
+    MARCA_D
+};
 
 enum
 COMPRAS{
