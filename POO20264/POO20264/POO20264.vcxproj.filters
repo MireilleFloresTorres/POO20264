@@ -13,11 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="source\main.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns">
+      <UniqueIdentifier>{414aae9d-c095-4dcf-b09d-80bf593f27b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -50,5 +48,16 @@
     <ClInclude Include="include\Productos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="include\MiSingleton.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegistroActividad.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main2.cpp">
+      <Filter>Archivos de recursos</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
