@@ -1,5 +1,7 @@
 #include "Prerequisites.h"
 #include"RegistroActividad.h"
+#include "FactoryMethod.h"
+#include "Vehiculo.h"
 
 //inicializamos la instancia estatic del singleton
 MiSingleton* MiSingleton::  instance = nullptr;
@@ -26,6 +28,31 @@ int main() {
 	registro2->agregarActividad("Datos guardados");
 
 	registro2->mostrarActividades();
+
+	Fabrica* fabrica = new FabricaA();//FABRICA -> genera a tesla
+	Product* producto = fabrica->createProduct();
+	producto->operation();
+
+	delete producto;
+	delete fabrica;
+	//favrica auto hereda de factoria vehiculos
+	//entonces mi puntero de la clase base untara a la clase derivada
+	FactoriaVehiculos* fabricaAuto = new FabricaAuto();
+	//tenemos el punetero a factooriavehiculos  
+	Vehiculo* coche = fabricaAuto->crearVehiculo();
+	//creamos un obejta de la fbrica auto 
+	//y lo guardamos en un puntero a vehiculo
+	coche->descripcion();
+
+	FactoriaVehiculos* fabricaBici = new FactoriaBicicleta();
+	Vehiculo* bici = fabricaBici->crearVehiculo();
+	bici->descripcion();
+
+	// Liberar memoria
+	delete coche;
+	delete fabricaAuto;
+	delete bici;
+	delete fabricaBici;
 
 	return 0;
 }
