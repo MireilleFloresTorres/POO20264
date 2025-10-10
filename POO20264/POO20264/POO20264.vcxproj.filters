@@ -13,8 +13,17 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de recursos\ProgrammingPatterns">
+      <UniqueIdentifier>{3a41069b-6d0c-418d-a810-4e488887f6c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\ProgrammingPatterns\AbstractFactory">
+      <UniqueIdentifier>{5d3edde7-816b-4bd5-9930-50c0c948c392}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Archivos de encabezado\ProgrammingPatterns">
-      <UniqueIdentifier>{414aae9d-c095-4dcf-b09d-80bf593f27b6}</UniqueIdentifier>
+      <UniqueIdentifier>{6492554b-a392-4577-94f5-689d627400bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\AbstractFactory">
+      <UniqueIdentifier>{ad0dbbb1-b3f7-4a64-b3d9-642f5e3fc9d3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -48,20 +57,41 @@
     <ClInclude Include="include\Productos.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="include\MiSingleton.h">
+    <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns</Filter>
     </ClInclude>
-    <ClInclude Include="include\RegistroActividad.h">
-      <Filter>Archivos de encabezado\ProgrammingPatterns</Filter>
-    </ClInclude>
-    <ClInclude Include="include\FactoryMethod.h">
+    <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns</Filter>
     </ClInclude>
     <ClInclude Include="include\Vehiculo.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaAbstracta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoA.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoA1.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\ProductoB1.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\AbstractFactory\FabricaConcreta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoA1.cpp">
+      <Filter>Archivos de recursos\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoB1.cpp">
+      <Filter>Archivos de recursos\ProgrammingPatterns\AbstractFactory</Filter>
+    </ClCompile>
     <ClCompile Include="source\main2.cpp">
       <Filter>Archivos de recursos</Filter>
     </ClCompile>

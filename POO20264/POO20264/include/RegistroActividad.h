@@ -1,5 +1,5 @@
 #pragma once
-#include"MiSingleton.h"
+#include"ProgrammingPatterns/MiSingleton.h"
 #include "Prerequisites.h"
 
 class RegistroActividad {

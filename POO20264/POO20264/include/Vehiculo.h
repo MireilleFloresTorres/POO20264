@@ -1,13 +1,14 @@
 #pragma once
+#pragma once
 #include "Prerequisites.h"
 
 // clase base 
 class Vehiculo {
 public:
-	virtual void descripcion() = 0; 
+	virtual void descripcion() = 0;
 	// método puro, obliga a las clases derivadas a implementarlo
 	//implementar su propia versión de la descripción
-	virtual ~Vehiculo() = default; 
+	virtual ~Vehiculo() = default;
 	// este me ayuda aliberar memoria correctamente
 };
 // clase derivada
@@ -39,11 +40,11 @@ public:// virtauo accede a la clase vehiculo
 
 //clase concreta que hereda de la clase abstracta
 class FabricaAuto : public FactoriaVehiculos {
-public :
-		Vehiculo* crearVehiculo() override {
-		return new Auto ();// creamos algo especifico (AUTO)
-		} // con el return new auto creamos el objeto
-		//y lo devolvemos como puntero a vehiculo
+public:
+	Vehiculo* crearVehiculo() override {
+		return new Auto();// creamos algo especifico (AUTO)
+	} // con el return new auto creamos el objeto
+	//y lo devolvemos como puntero a vehiculo
 };
 
 class FactoriaBicicleta : public FactoriaVehiculos {
