@@ -31,6 +31,9 @@
     <Filter Include="Archivos de recursos\ProgrammingPatterns\FurnitureFactory">
       <UniqueIdentifier>{44235969-ab5f-4c18-8a50-046d33506bac}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Builder">
+      <UniqueIdentifier>{264d180f-ae1c-4ac0-86e0-15ad144dedf8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -104,6 +107,12 @@
     </ClInclude>
     <ClInclude Include="source\ProgrammingPatterns\FurnitureFactory\StaticFurniture.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\FurnitureFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
