@@ -201,6 +201,8 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h" />
     <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\FurnitureFactory\FactoriaMuebles.h">
@@ -228,15 +230,21 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\MiSingleton.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Pizzeria\BuildPizzaHawaiana.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Pizzeria\BuildPizzaVegeteriana.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Pizzeria\ConstructorPizza.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Pizzeria\Pizza.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
     <ClInclude Include="include\Vehiculo.h" />
     <ClInclude Include="source\ProgrammingPatterns\FurnitureFactory\StaticFurniture.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="include\ProgrammingPatterns\Pizzeria\PizzaDirector.cpp" />
     <ClCompile Include="source\main2.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoA1.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoB1.cpp" />
+    <ClCompile Include="source\ProgrammingPatterns\Builder\BuilderConcreto.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\FurnitureFactory\FactoriaMueblesModernos.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
@@ -244,6 +252,8 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="source\ProgrammingPatterns\FurnitureFactory\FactoriaMueblesRusticos.cpp" />
+    <ClCompile Include="source\ProgrammingPatterns\Pizzeria\BuildPizzaHawaiana.cpp" />
+    <ClCompile Include="source\ProgrammingPatterns\Pizzeria\BuildPizzaVegetariana.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

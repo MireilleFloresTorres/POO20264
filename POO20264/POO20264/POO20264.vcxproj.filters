@@ -34,6 +34,15 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Builder">
       <UniqueIdentifier>{264d180f-ae1c-4ac0-86e0-15ad144dedf8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de recursos\ProgrammingPatterns\Builder">
+      <UniqueIdentifier>{23f3505d-aeec-46ab-a403-5f89f3fb0a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Pizzeria">
+      <UniqueIdentifier>{369886fa-9b91-4a7f-8a31-812053516fa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de recursos\ProgrammingPatterns\Pizzeria">
+      <UniqueIdentifier>{9bf92c0f-9959-4323-8cdf-8aa733cd1d9b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -114,6 +123,24 @@
     <ClInclude Include="include\ProgrammingPatterns\Builder\Builder.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Pizzeria\Pizza.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Pizzeria</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Pizzeria\ConstructorPizza.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Pizzeria</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Pizzeria\BuildPizzaHawaiana.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Pizzeria</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Pizzeria\BuildPizzaVegeteriana.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Pizzeria</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoA1.cpp">
@@ -130,6 +157,18 @@
     </ClCompile>
     <ClCompile Include="source\ProgrammingPatterns\FurnitureFactory\FactoriaMueblesRusticos.cpp">
       <Filter>Archivos de recursos\ProgrammingPatterns\FurnitureFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\Builder\BuilderConcreto.cpp">
+      <Filter>Archivos de recursos\ProgrammingPatterns\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\Pizzeria\BuildPizzaHawaiana.cpp">
+      <Filter>Archivos de recursos\ProgrammingPatterns\Pizzeria</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ProgrammingPatterns\Pizzeria\BuildPizzaVegetariana.cpp">
+      <Filter>Archivos de recursos\ProgrammingPatterns\Pizzeria</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ProgrammingPatterns\Pizzeria\PizzaDirector.cpp">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Pizzeria</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
