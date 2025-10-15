@@ -234,13 +234,14 @@
     <ClInclude Include="include\ProgrammingPatterns\Pizzeria\BuildPizzaVegeteriana.h" />
     <ClInclude Include="include\ProgrammingPatterns\Pizzeria\ConstructorPizza.h" />
     <ClInclude Include="include\ProgrammingPatterns\Pizzeria\Pizza.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\Prototype.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
     <ClInclude Include="include\Vehiculo.h" />
     <ClInclude Include="source\ProgrammingPatterns\FurnitureFactory\StaticFurniture.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\ProgrammingPatterns\Pizzeria\PizzaDirector.cpp" />
     <ClCompile Include="source\main2.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoA1.cpp" />
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoB1.cpp" />
@@ -252,8 +253,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="source\ProgrammingPatterns\FurnitureFactory\FactoriaMueblesRusticos.cpp" />
-    <ClCompile Include="source\ProgrammingPatterns\Pizzeria\BuildPizzaHawaiana.cpp" />
-    <ClCompile Include="source\ProgrammingPatterns\Pizzeria\BuildPizzaVegetariana.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
