@@ -1,28 +1,17 @@
 #include "Prerequisites.h"
-#include"ProgrammingPatterns/Prototype/Documento.h"
-#include"ProgrammingPatterns/Prototype/DocumentoConcreto.h"
-#include"ProgrammingPatterns/Prototype/DocumentoImagen.h"
-#include"ProgrammingPatterns/Prototype/DocumentoTexto.h"
+#include "ProgrammingPatterns/Adapter/Adaptador.h"
+#include "ProgrammingPatterns/Adapter/InterfazNueva.h"
+#include "ProgrammingPatterns/Adapter/InterfazVieja.h"
+
 
 int main() {
 
-    // Crear prototipos
-    DocumentoTexto* texto1 = new DocumentoTexto();
-    texto1->configu("Documento original de texto");
+	InterfazVieja* objetoViejo = new InterfazVieja();
+	InterfazNueva* objetoNuevo = new Adaptador(objetoViejo);
 
-    DocumentoImagen* imagen1 = new DocumentoImagen();
-    imagen1->configu("foto.jpg");
+	objetoNuevo->metodoNuevo; 
 
-    std::cout << "original" << std::endl;
-    texto1->mostrar();
-    imagen1->mostrar();
-
-    DocumentoConcreto* texto2 = texto1->clone();
-    DocumentoConcreto* imagen2 = imagen1->clone();
-    
-    std::cout << "clonel" << std::endl;
-    texto2->mostrar();
-    imagen2->mostrar();
-
+	delete objetoViejo;
+	delete objetoNuevo;
 	return 0;
 }

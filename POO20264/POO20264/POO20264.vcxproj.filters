@@ -159,6 +159,9 @@
     <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoImagen.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoTexto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoA1.cpp">
