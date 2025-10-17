@@ -234,6 +234,9 @@
     <ClInclude Include="include\ProgrammingPatterns\Pizzeria\BuildPizzaVegeteriana.h" />
     <ClInclude Include="include\ProgrammingPatterns\Pizzeria\ConstructorPizza.h" />
     <ClInclude Include="include\ProgrammingPatterns\Pizzeria\Pizza.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\Documento.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoConcreto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoImagen.h" />
     <ClInclude Include="include\ProgrammingPatterns\Prototype\Prototype.h" />
     <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h" />
     <ClInclude Include="include\Rectangulo.h" />

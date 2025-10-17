@@ -150,6 +150,15 @@
     <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\Documento.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoConcreto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoImagen.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Prototype</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoA1.cpp">
