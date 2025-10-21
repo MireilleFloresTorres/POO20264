@@ -1,27 +1,20 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Adapter/Circulo.h"
-#include "ProgrammingPatterns/Adapter/Cuadrado.h"
-#include "ProgrammingPatterns/Adapter/CirculoAdapter.h"
-#include "ProgrammingPatterns/Adapter/CuadradoAdapter.h"
-#include "ProgrammingPatterns/Adapter/Dibujable.h"
-
+#include "ProgrammingPatterns/Decorator/ComponenteConcreto.h"
+#include "ProgrammingPatterns/Decorator/DecoratorConcretoA.h"
+#include "ProgrammingPatterns/Decorator/DecoratorConcretoB.h"
 
 int main() {
 
-	Circulo* miCirculo = new Circulo();
-	Cuadrado* miCuadrado = new Cuadrado();
-	std::cout << std::endl;
+	ComponenteConcreto* objeto = new ComponenteConcreto();
+	DecoratorConcretoA* decoradorA = new DecoratorConcretoA(objeto);
+	DecoratorConcretoB* decoradorB = new DecoratorConcretoB(decoradorA);
 
-	Dibujable* circuloAdaptado = new CirculoAdapter(miCirculo);
-	Dibujable* cuadradoAdaptado = new CuadradoAdapter(miCuadrado);
+	objeto->operacion();
+	decoradorA->operacion();
+	decoradorB->operacion();
 
-	miCirculo->DibujarCirculo();
-	miCuadrado->DibujarCuadrado();
-
-	delete circuloAdaptado;
-	delete cuadradoAdaptado;
-	delete miCirculo;
-	delete miCuadrado;
-
+	delete objeto;
+	delete decoradorA;
+	delete decoradorB;
 	return 0;
 }
