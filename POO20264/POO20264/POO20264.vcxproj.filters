@@ -49,6 +49,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Adapter">
       <UniqueIdentifier>{c6a4f901-dab1-4fe3-8f45-dae715bf7ce1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Decorator">
+      <UniqueIdentifier>{f3454e3b-fcfa-4363-a951-4390f96129d1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -185,6 +188,36 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Adapter\Circulo.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Componente.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\ComponenteConcreto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Decorator.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoratorConcretoA.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoratorConcretoB.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Cafeteria.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\CafeteriaConcreta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Condimento.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Leche.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoradorAzucar.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

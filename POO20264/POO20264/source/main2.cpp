@@ -1,20 +1,20 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Decorator/ComponenteConcreto.h"
-#include "ProgrammingPatterns/Decorator/DecoratorConcretoA.h"
-#include "ProgrammingPatterns/Decorator/DecoratorConcretoB.h"
+#include"ProgrammingPatterns/Decorator/CafeteriaConcreta.h"
+#include"ProgrammingPatterns/Decorator/Leche.h"
+#include"ProgrammingPatterns/Decorator/DecoradorAzucar.h"
 
 int main() {
 
-	ComponenteConcreto* objeto = new ComponenteConcreto();
-	DecoratorConcretoA* decoradorA = new DecoratorConcretoA(objeto);
-	DecoratorConcretoB* decoradorB = new DecoratorConcretoB(decoradorA);
+	CafeteriaConcreta* cafe = new CafeteriaConcreta();
+	CondimentoLeche* Leche = new CondimentoLeche(cafe); 
+	CondimentoAzucar* Azucar = new CondimentoAzucar(Leche);
 
-	objeto->operacion();
-	decoradorA->operacion();
-	decoradorB->operacion();
+	cafe->PrepararCafe();
+	Azucar->PrepararCafe();
+	Leche->PrepararCafe();
 
-	delete objeto;
-	delete decoradorA;
-	delete decoradorB;
+	delete cafe;
+	delete Leche;
+	delete Azucar;
 	return 0;
 }

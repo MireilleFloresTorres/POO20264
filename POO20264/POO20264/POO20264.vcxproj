@@ -211,6 +211,16 @@
     <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Cafeteria.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\CafeteriaConcreta.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Componente.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\ComponenteConcreto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Condimento.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoradorAzucar.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Decorator.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoratorConcretoA.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoratorConcretoB.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Decorator\Leche.h" />
     <ClInclude Include="include\ProgrammingPatterns\FactoryMethod.h" />
     <ClInclude Include="include\ProgrammingPatterns\FurnitureFactory\FactoriaMuebles.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
