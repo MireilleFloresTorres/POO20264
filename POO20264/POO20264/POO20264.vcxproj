@@ -211,6 +211,8 @@
     <ClInclude Include="include\ProgrammingPatterns\Builder\BuilderConcreto.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Director.h" />
     <ClInclude Include="include\ProgrammingPatterns\Builder\Producto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Composite.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Hoja.h" />
     <ClInclude Include="include\ProgrammingPatterns\Decorator\Cafeteria.h" />
     <ClInclude Include="include\ProgrammingPatterns\Decorator\CafeteriaConcreta.h" />
     <ClInclude Include="include\ProgrammingPatterns\Decorator\Componente.h" />

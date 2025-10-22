@@ -52,6 +52,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Decorator">
       <UniqueIdentifier>{f3454e3b-fcfa-4363-a951-4390f96129d1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Composite">
+      <UniqueIdentifier>{5c75b245-6593-47fb-83c5-428f8237dd67}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -218,6 +221,12 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Decorator\DecoradorAzucar.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Hoja.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Composite.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
