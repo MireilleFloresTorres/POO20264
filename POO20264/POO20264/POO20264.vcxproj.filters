@@ -228,6 +228,21 @@
     <ClInclude Include="include\ProgrammingPatterns\Composite\Composite.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
     </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Sistema.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Archivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\Carpeta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\SistemaArchivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Composite\SistemaCarpeta.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\ProgrammingPatterns\AbstractFactory\ProductoA1.cpp">
