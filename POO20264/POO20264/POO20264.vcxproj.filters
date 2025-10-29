@@ -55,6 +55,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Composite">
       <UniqueIdentifier>{5c75b245-6593-47fb-83c5-428f8237dd67}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Proxy">
+      <UniqueIdentifier>{73994b9a-aa1f-44a6-a259-940e3c5ce79e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -242,6 +245,21 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Composite\SistemaCarpeta.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Proxy.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Sujeto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\SujetoReal.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Imagen.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\ProxyImagen.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Proxy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

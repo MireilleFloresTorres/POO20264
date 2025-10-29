@@ -264,6 +264,11 @@
     <ClInclude Include="include\ProgrammingPatterns\Prototype\DocumentoTexto.h" />
     <ClInclude Include="include\ProgrammingPatterns\Prototype\Prototype.h" />
     <ClInclude Include="include\ProgrammingPatterns\Prototype\PrototypeConcreto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Imagen.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Proxy.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\ProxyImagen.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\Sujeto.h" />
+    <ClInclude Include="include\ProgrammingPatterns\Proxy\SujetoReal.h" />
     <ClInclude Include="include\Rectangulo.h" />
     <ClInclude Include="include\UsuarioBancario.h" />
     <ClInclude Include="include\Vehiculo.h" />
