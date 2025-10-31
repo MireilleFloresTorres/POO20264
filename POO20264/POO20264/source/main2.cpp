@@ -1,9 +1,13 @@
 #include "Prerequisites.h"
-#include "ProgrammingPatterns/Proxy/ProxyImagen.h"
+#include "GameProgrammingPatterns/Observer/TemperatureSensor.h"
+#include "GameProgrammingPatterns/Observer/DisplayDevice.h"
 
 int main() {
-	ProxyImagen proxy; 
-	proxy.mostrar();
-	proxy.mostrar(); 
+	TemperatureSensor sensor; 
+	DisplayDevice display;
+	sensor.addObserver(&display);
+	sensor.setTemperature(25);
+	sensor.setTemperature(30); 
+	
 	return 0;
 }
