@@ -64,6 +64,9 @@
     <Filter Include="Archivos de encabezado\GameProgrammingPatterns\Observer">
       <UniqueIdentifier>{bcb0be19-29cb-4fb3-8f04-34a1e7d278e5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\Bridge">
+      <UniqueIdentifier>{85b7e761-006a-4c5c-bfae-e5a36e635cbb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -275,6 +278,33 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h">
       <Filter>Archivos de encabezado\GameProgrammingPatterns\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ImplementacionConcretaA.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ImplementacionConcretaB.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Abstraccion.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\AbstraccionRefinada.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Implementacion.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Dispositivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Tv.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\Radio.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\Bridge\ControlRemoto.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

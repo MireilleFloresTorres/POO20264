@@ -1,13 +1,24 @@
 #include "Prerequisites.h"
-#include "GameProgrammingPatterns/Observer/TemperatureSensor.h"
-#include "GameProgrammingPatterns/Observer/DisplayDevice.h"
+#include"ProgrammingPatterns/Bridge/Dispositivo.h"
+#include"ProgrammingPatterns/Bridge/Tv.h"
+#include"ProgrammingPatterns/Bridge/Radio.h"
+#include"ProgrammingPatterns/Bridge/ControlRemoto.h"
+
 
 int main() {
-	TemperatureSensor sensor; 
-	DisplayDevice display;
-	sensor.addObserver(&display);
-	sensor.setTemperature(25);
-	sensor.setTemperature(30); 
-	
+	Tv tv;
+	Radio radio; 
+
+	ControlRemoto Tv(&tv);
+	ControlRemoto Radio(&radio); 
+
+	Tv.EncenderDisp(); 
+	Radio.EncenderDisp(); 
+
+
+	Tv.ApagarDisp();
+	Radio.ApagarDisp();
+
+
 	return 0;
 }
