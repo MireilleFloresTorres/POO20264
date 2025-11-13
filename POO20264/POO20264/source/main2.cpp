@@ -1,24 +1,13 @@
 #include "Prerequisites.h"
-#include"ProgrammingPatterns/Bridge/Dispositivo.h"
-#include"ProgrammingPatterns/Bridge/Tv.h"
-#include"ProgrammingPatterns/Bridge/Radio.h"
-#include"ProgrammingPatterns/Bridge/ControlRemoto.h"
-
+#include"ProgrammingPatterns/ChainOfResponsability/Solicitud.h"
+#include"ProgrammingPatterns/ChainOfResponsability/ManejadorDirectivo.h"
+#include"ProgrammingPatterns/ChainOfResponsability/ManejadorDirecGeneral.h"
+#include"ProgrammingPatterns/ChainOfResponsability/ManejadorGerente.h"
 
 int main() {
-	Tv tv;
-	Radio radio; 
-
-	ControlRemoto Tv(&tv);
-	ControlRemoto Radio(&radio); 
-
-	Tv.EncenderDisp(); 
-	Radio.EncenderDisp(); 
-
-
-	Tv.ApagarDisp();
-	Radio.ApagarDisp();
-
-
+	
+	ManejadorDirecGeneral direcGeneral(nullptr); 
+	ManejadorGerente gerente(&direcGeneral); 
+	ManejadorDirectivo directivo(&gerente);
 	return 0;
 }

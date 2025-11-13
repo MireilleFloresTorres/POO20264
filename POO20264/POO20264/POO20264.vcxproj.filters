@@ -67,6 +67,9 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\Bridge">
       <UniqueIdentifier>{85b7e761-006a-4c5c-bfae-e5a36e635cbb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability">
+      <UniqueIdentifier>{76c1ad8c-b0f0-4ad3-bcaa-ddde939b1a4e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -305,6 +308,30 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\Bridge\ControlRemoto.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\Manejador.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoA.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoB.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorConcretoC.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\Solicitud.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorDirecGeneral.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorDirectivo.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorGerente.h">
+      <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
