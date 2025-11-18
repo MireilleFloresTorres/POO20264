@@ -70,6 +70,15 @@
     <Filter Include="Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability">
       <UniqueIdentifier>{76c1ad8c-b0f0-4ad3-bcaa-ddde939b1a4e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingPatterns\Command">
+      <UniqueIdentifier>{28c2ffb4-4cf5-4104-9874-f9c304f0acfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingPatterns\Command\ConcreteCommands">
+      <UniqueIdentifier>{0b35b76f-b5d4-4a5d-8be7-1888c95abe46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingPatterns\Command\ConcreteCommands\Invoker">
+      <UniqueIdentifier>{8ce01840-5e41-40c2-8182-959cd6e78ceb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -332,6 +341,33 @@
     </ClInclude>
     <ClInclude Include="include\ProgrammingPatterns\ChainOfResponsability\ManejadorGerente.h">
       <Filter>Archivos de encabezado\ProgrammingPatterns\ChainOfResponsability</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Command.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Luz.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ConcreteCommand\ComandoEncender.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command\ConcreteCommands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\ConcreteCommand\ControlRemoto.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command\ConcreteCommands\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Operacion.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Suma.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Resta.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Multiplicacion.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\Command\Calculadora.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\Command</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
