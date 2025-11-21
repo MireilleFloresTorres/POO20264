@@ -173,6 +173,9 @@
     <ClInclude Include="include\GameProgrammingPatterns\Command\Operacion.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\Resta.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Command\Suma.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\ConcreteFlyweight.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\Flyweight.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\Flyweight\FlyweightFactory.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\observer.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\TemperatureSensor.h" />

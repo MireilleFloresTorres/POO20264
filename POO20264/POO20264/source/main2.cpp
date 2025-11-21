@@ -1,33 +1,24 @@
 #include "Prerequisites.h"
-#include"GameProgrammingPatterns/Command/Operacion.h"
-#include"GameProgrammingPatterns/Command/Suma.h"
-#include"GameProgrammingPatterns/Command/resta.h"
-#include"GameProgrammingPatterns/Command/Multiplicacion.h"
-#include"GameProgrammingPatterns/Command/Calculadora.h"
+#include"GameProgrammingPatterns/Flyweight/FlyweightFactory.h"
 
 int main() {
-	int resultado = 0;
+	FlyweightFactory factory; 
+	Flyweight* flyweightA = factory.getFlyweight('A'); 
+	Flyweight* flyweightB = factory.getFlyweight('B');
+	Flyweight* flyweightC = factory.getFlyweight('C');
+	Flyweight* flyweightD = factory.getFlyweight('D');
+	Flyweight* flyweightA2 = factory.getFlyweight('A2');
 
-	Suma suma(resultado, 5);
-	Resta resta(resultado, 3);
-	Multiplicacion multiplicacion(resultado, 4);
-	// no hay division no supe hacer eso
-
-	Calculadora calculadora;
-	calculadora.ejecutarOpera(&suma);
-	std::cout << "Resultado despúes de la suma: " << resultado << std::endl;
-
-	calculadora.ejecutarOpera(&resta);
-	std::cout << "Resultado despúes de la resta: " << resultado << std::endl;
-
-	calculadora.deshacerOpera();
-	std::cout << "Resultado despúes de dehacer la resta: " << resultado<< std:: endl;
-
-	calculadora.rehacerOpera(); 
-	std::cout << "Resultado despúes de re hacer la rrs: " << std::endl; 
-
-	calculadora.ejecutarOpera(&multiplicacion); 
-	std::cout << "Resultado despúes de la multiplicación: " << resultado << std::endl;
+	flyweightA->draw(10, 20);
+	flyweightB->draw(30, 40);
+	flyweightC->draw(50, 60);
+	flyweightD->draw(70, 80);
+	flyweightA2->draw(40, 20);
 	
+	delete flyweightA;
+	delete flyweightB;
+	delete flyweightC;
+	delete flyweightD;
+
 	return 0;
 }
