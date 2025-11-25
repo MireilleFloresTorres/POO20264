@@ -179,6 +179,15 @@
     <ClInclude Include="include\GameProgrammingPatterns\Observer\DisplayDevice.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\observer.h" />
     <ClInclude Include="include\GameProgrammingPatterns\Observer\TemperatureSensor.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\HurtState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\Normal.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\NormalState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\Player.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\Reducido.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\Detenido.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\Vehiculo.h" />
+    <ClInclude Include="include\GameProgrammingPatterns\State\VehiculoState.h" />
     <ClInclude Include="include\Inventory.h" />
     <ClInclude Include="include\item.h" />
     <ClInclude Include="include\Prerequisites.h" />

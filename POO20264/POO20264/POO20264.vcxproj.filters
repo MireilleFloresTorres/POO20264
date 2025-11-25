@@ -82,6 +82,9 @@
     <Filter Include="Archivos de encabezado\GameProgrammingPatterns\Flyweight">
       <UniqueIdentifier>{a45bc723-c952-4382-a1fe-af081c9faaa9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\GameProgrammingPatterns\State">
+      <UniqueIdentifier>{1aa2d508-7fdf-43bd-9d2f-e72b85216899}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Prerequisites.h">
@@ -380,6 +383,33 @@
     </ClInclude>
     <ClInclude Include="include\GameProgrammingPatterns\Flyweight\FlyweightFactory.h">
       <Filter>Archivos de encabezado\GameProgrammingPatterns\Flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\PlayerState.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\NormalState.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\HurtState.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Player.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\VehiculoState.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Detenido.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Reducido.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Normal.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameProgrammingPatterns\State\Vehiculo.h">
+      <Filter>Archivos de encabezado\GameProgrammingPatterns\State</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
