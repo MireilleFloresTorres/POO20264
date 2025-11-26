@@ -1,25 +1,14 @@
 #include "Prerequisites.h"
-#include"GameProgrammingPatterns/State/PlayerState.h"
-#include"GameProgrammingPatterns/State/Player.h"
-#include"GameProgrammingPatterns/State/NormalState.h"
-#include"GameProgrammingPatterns/State/HurtState.h"
+#include"GameProgrammingPatterns/Facade/AudioFacade.h"
 
 int main() {
-
-	Player* player = new Player(); 
-	player->Attack(); 
-	player->Defend(); 
-	player->move();
-	std::cout << "PLayer gets hurt!" << std::endl; 
-	player->SetState(new HurtState()); 
-	player->Attack();
-	player->Defend();
-	player->move();
-	std::cout << "PLayer calms down to normal state " << std::endl;
-	player->SetState(new NormalState());
-	player->Attack();
-	player->Defend();
-	player->move();
-
+	AudioFacade audio;
+	
+	audio.initialize(); 
+	audio.PlayBacgroundMusic("assets/music/menu_them.ogg"); 
+	audio.playSfx("assets/sfx/jump.wav"); 
+	audio.setMasterVolume(0.5f); 
+	audio.enabledReverb(false); 
+	
 	return 0;
 }

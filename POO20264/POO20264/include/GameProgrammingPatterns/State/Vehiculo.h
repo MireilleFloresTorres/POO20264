@@ -13,4 +13,3 @@ private:
 	VehiculoState* estadoActual; 
 };
 
-Vehiculo::Vehiculo() : estadoActual(new Detenido()) {}
